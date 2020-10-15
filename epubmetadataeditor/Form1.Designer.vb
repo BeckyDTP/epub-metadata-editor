@@ -97,6 +97,7 @@ Partial Class Form1
         Me.Button44 = New System.Windows.Forms.Button
         Me.Button45 = New System.Windows.Forms.Button
         Me.Button8 = New System.Windows.Forms.Button
+        Me.Label31 = New System.Windows.Forms.Label
         Me.Label4 = New System.Windows.Forms.Label
         Me.ListBox1 = New System.Windows.Forms.ListBox
         Me.Button9 = New System.Windows.Forms.Button
@@ -177,6 +178,7 @@ Partial Class Form1
         Me.LinkLabel10 = New System.Windows.Forms.LinkLabel
         Me.CheckBox13 = New System.Windows.Forms.CheckBox
         Me.LinkLabel11 = New System.Windows.Forms.LinkLabel
+        Me.Button46 = New System.Windows.Forms.Button
         Me.ContextMenuStrip1.SuspendLayout()
         Me.ContextMenuStrip2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -391,49 +393,49 @@ Partial Class Form1
         '
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddImageToolStripMenuItem, Me.ToolStripMenuItem1, Me.ChangeImageToolStripMenuItem, Me.UseExistingImageToolStripMenuItem, Me.PasteImageToolStripMenuItem, Me.ToolStripMenuItem2, Me.SaveImageAsToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(182, 126)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(183, 126)
         '
         'AddImageToolStripMenuItem
         '
         Me.AddImageToolStripMenuItem.Enabled = False
         Me.AddImageToolStripMenuItem.Name = "AddImageToolStripMenuItem"
-        Me.AddImageToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+        Me.AddImageToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
         Me.AddImageToolStripMenuItem.Text = "Add image..."
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(178, 6)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(179, 6)
         '
         'ChangeImageToolStripMenuItem
         '
         Me.ChangeImageToolStripMenuItem.Enabled = False
         Me.ChangeImageToolStripMenuItem.Name = "ChangeImageToolStripMenuItem"
-        Me.ChangeImageToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+        Me.ChangeImageToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
         Me.ChangeImageToolStripMenuItem.Text = "Change image..."
         '
         'UseExistingImageToolStripMenuItem
         '
         Me.UseExistingImageToolStripMenuItem.Name = "UseExistingImageToolStripMenuItem"
-        Me.UseExistingImageToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+        Me.UseExistingImageToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
         Me.UseExistingImageToolStripMenuItem.Text = "Use existing image..."
         '
         'PasteImageToolStripMenuItem
         '
         Me.PasteImageToolStripMenuItem.Name = "PasteImageToolStripMenuItem"
-        Me.PasteImageToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+        Me.PasteImageToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
         Me.PasteImageToolStripMenuItem.Text = "Paste image"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(178, 6)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(179, 6)
         '
         'SaveImageAsToolStripMenuItem
         '
         Me.SaveImageAsToolStripMenuItem.Enabled = False
         Me.SaveImageAsToolStripMenuItem.Name = "SaveImageAsToolStripMenuItem"
-        Me.SaveImageAsToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+        Me.SaveImageAsToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
         Me.SaveImageAsToolStripMenuItem.Text = "Save image as..."
         '
         'ToolTip1
@@ -481,7 +483,7 @@ Partial Class Form1
         Me.Button28.Enabled = False
         Me.Button28.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.Button28.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button28.Location = New System.Drawing.Point(422, 452)
+        Me.Button28.Location = New System.Drawing.Point(391, 451)
         Me.Button28.Name = "Button28"
         Me.Button28.Size = New System.Drawing.Size(26, 20)
         Me.Button28.TabIndex = 44
@@ -495,7 +497,7 @@ Partial Class Form1
         Me.Button29.Enabled = False
         Me.Button29.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.Button29.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button29.Location = New System.Drawing.Point(422, 556)
+        Me.Button29.Location = New System.Drawing.Point(391, 556)
         Me.Button29.Name = "Button29"
         Me.Button29.Size = New System.Drawing.Size(26, 20)
         Me.Button29.TabIndex = 45
@@ -885,6 +887,19 @@ Partial Class Form1
         Me.ToolTip1.SetToolTip(Me.Button8, "View current EPUB in external viewer" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Hold SHIFT to open original file)")
         Me.Button8.UseVisualStyleBackColor = True
         '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label31.Location = New System.Drawing.Point(423, 557)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(43, 13)
+        Me.Label31.TabIndex = 106
+        Me.Label31.Text = "Multiple"
+        Me.ToolTip1.SetToolTip(Me.Label31, "Open Advanced Tasks and click ""Edit .opf file"" to make changes to other identifie" & _
+                "rs.")
+        Me.Label31.Visible = False
+        '
         'Label4
         '
         Me.Label4.AutoSize = True
@@ -925,7 +940,7 @@ Partial Class Form1
         Me.Button10.Location = New System.Drawing.Point(906, 236)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(90, 25)
-        Me.Button10.TabIndex = 84
+        Me.Button10.TabIndex = 83
         Me.Button10.Text = "Go"
         Me.Button10.UseVisualStyleBackColor = True
         '
@@ -1263,7 +1278,7 @@ Partial Class Form1
         Me.TextBox6.Location = New System.Drawing.Point(130, 452)
         Me.TextBox6.Multiline = False
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(287, 20)
+        Me.TextBox6.Size = New System.Drawing.Size(255, 20)
         Me.TextBox6.TabIndex = 12
         Me.TextBox6.Text = ""
         '
@@ -1296,7 +1311,7 @@ Partial Class Form1
         Me.TextBox9.Location = New System.Drawing.Point(81, 556)
         Me.TextBox9.Multiline = False
         Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(335, 20)
+        Me.TextBox9.Size = New System.Drawing.Size(304, 20)
         Me.TextBox9.TabIndex = 16
         Me.TextBox9.Text = ""
         '
@@ -1701,11 +1716,25 @@ Partial Class Form1
         Me.LinkLabel11.TabStop = True
         Me.LinkLabel11.Text = "Choose"
         '
+        'Button46
+        '
+        Me.Button46.Enabled = False
+        Me.Button46.Location = New System.Drawing.Point(1000, 236)
+        Me.Button46.Name = "Button46"
+        Me.Button46.Size = New System.Drawing.Size(90, 25)
+        Me.Button46.TabIndex = 84
+        Me.Button46.Text = "Extract"
+        Me.ToolTip1.SetToolTip(Me.Button46, "Extract metadata from filenames")
+        Me.Button46.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AllowDrop = True
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.ClientSize = New System.Drawing.Size(1247, 644)
+        Me.Controls.Add(Me.Button46)
+        Me.Controls.Add(Me.Label31)
+        Me.Controls.Add(Me.TextBox9)
         Me.Controls.Add(Me.LinkLabel11)
         Me.Controls.Add(Me.LinkLabel10)
         Me.Controls.Add(Me.CheckBox13)
@@ -1743,11 +1772,10 @@ Partial Class Form1
         Me.Controls.Add(Me.LinkLabel6)
         Me.Controls.Add(Me.Button30)
         Me.Controls.Add(Me.CheckBox5)
+        Me.Controls.Add(Me.TextBox11)
         Me.Controls.Add(Me.Button29)
         Me.Controls.Add(Me.Button28)
-        Me.Controls.Add(Me.TextBox11)
         Me.Controls.Add(Me.TextBox10)
-        Me.Controls.Add(Me.TextBox9)
         Me.Controls.Add(Me.TextBox8)
         Me.Controls.Add(Me.TextBox7)
         Me.Controls.Add(Me.TextBox6)
@@ -1997,5 +2025,7 @@ Partial Class Form1
     Friend WithEvents LinkLabel10 As System.Windows.Forms.LinkLabel
     Friend WithEvents CheckBox13 As System.Windows.Forms.CheckBox
     Friend WithEvents LinkLabel11 As System.Windows.Forms.LinkLabel
+    Friend WithEvents Label31 As System.Windows.Forms.Label
+    Friend WithEvents Button46 As System.Windows.Forms.Button
 
 End Class

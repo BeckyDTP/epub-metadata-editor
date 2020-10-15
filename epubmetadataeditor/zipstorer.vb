@@ -697,6 +697,7 @@ Public Class ZipStorer
         Dim minutes As Integer = CType(_dt >> 5, Integer) And 63
         Dim seconds As Integer = CType(_dt And 31, Integer) * 2
 
+        If seconds >= 60 Then seconds = 59
         If ((year >= 2107) Or (month = 0) Or (day = 0)) Then Return DateTime.Now
 
         Return New DateTime(year, month, day, hours, minutes, seconds)
@@ -761,7 +762,8 @@ Public Class ZipStorer
                     Dim commentSize As UInt16 = br.ReadUInt16()
 
                     ' check if comment field is the very last data in file
-                    If (Me.ZipFileStream.Position + commentSize <> Me.ZipFileStream.Length) Then Return False
+                    ' the following line has been commented out so that zip files with trailing data can be opened
+                    'If (Me.ZipFileStream.Position + commentSize <> Me.ZipFileStream.Length) Then Return False
 
                     ' Copy entire central directory to a memory buffer
                     Me.ExistingFiles = entries
